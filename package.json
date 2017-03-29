@@ -1,0 +1,15 @@
+{
+  "name": "garden-site",
+  "version": "1.0.0",
+  "description": "landscape design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "armin maurice",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-serve": "^1.4.0"
+  }
+}
