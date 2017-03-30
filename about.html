@@ -1,8 +1,35 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      function toggleModal(){
+        document.getElementById('modal').classList.toggle('open');
+      }
+      function toggleNav(){
+        document.getElementById('mobileNav').classList.toggle('open');
+      }
+    </script>
   </head>
   <body>
+    <div class="contact-us" id="modal">
+      <div class="contact-us-inner">
+        <a class="close-modal" onclick="toggleModal()">
+          <img src="images/close.svg" alt="">
+        </a>
+        <h1 class="pink-text">Contact us</h1>
+        <div class="text-center">Email: hello@gardeningbydesign.ca</div>
+        <div class="text-center">Phone number: 613-218-0468</div>
+        <form action="submit" class="contact-us-form">
+          <input type="text" placeholder="First Name" class="half-width">
+          <input type="text" placeholder="Last Name" class="half-width">
+          <input type="email" placeholder="Email" class="full-width">
+          <input type="text" placeholder="Address" class="full-width">
+          <input type="text" placeholder="How You Found Us" class="full-width">
+          <textarea name="" id="" cols="30" rows="5" placeholder="Quick Message" class="full-width"></textarea>
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </div>
+    </div>
     <div class="nav">
       <div class="nav-left no-gute">
         <img src="images/logo.png" alt="" height="50" width="50" class="no-gute">
@@ -11,7 +38,7 @@
         <a href="" class="nav-item no-gute">Home</a>
         <a href="" class="nav-item no-gute">Journal</a>
         <a href="" class="nav-item no-gute">About us</a>
-        <a class="nav-item nav-contact no-gute">Contact US</a>
+        <a class="nav-item button no-gute" onclick="toggleModal()">Contact US</a>
       </div>
     </div>
     <div class="main-photo cover-photo">
@@ -73,20 +100,22 @@
           Her appreciation and understanding of plants began during time spent in northern Quebec planting tree seedlings, and was further satisfied while working with Artistic Landscape Designs Ltd. Gardening and design is a organic and nostalgic practice her for—a chance to reconnect with her roots—and to give space and purpose to plant life.
         </p>
       </div>
-      <div class="employee">
+      <div class="employee --start">
         <img src="images/employee1.jpg" alt="" class="employee-image">
-        <h2 class="employee-name pink-text">Mary-Ann Schmitze</h2>
-        <h3 class="job-title">Founter & landscape designer</h3>
-        <p class="employee-description">
-          Founder of Gardening By Design, Mary-Anne’s aesthetic and design process is a product of her remarkable childhood.
+        <div class="employee-text">
+          <h2 class="employee-name pink-text">Mary-Ann Schmitze</h2>
+          <h3 class="job-title">Founter & landscape designer</h3>
+          <p class="employee-description">
+            Founder of Gardening By Design, Mary-Anne’s aesthetic and design process is a product of her remarkable childhood.
 
-          Growing up in the countryside, as one of 12 siblings, she’d always gravitated towards the outdoors. 
-          It was a chance to slip away from her house, which was often crowded and busy. 
-          She loved the natural beauty of rivers, rocks, and wild grasses—as well as the smell of dirt. 
-          This was also the time she felt most inventive allowing her imagination to run free.
+            Growing up in the countryside, as one of 12 siblings, she’d always gravitated towards the outdoors. 
+            It was a chance to slip away from her house, which was often crowded and busy. 
+            She loved the natural beauty of rivers, rocks, and wild grasses—as well as the smell of dirt. 
+            This was also the time she felt most inventive allowing her imagination to run free.
 
-          Her appreciation and understanding of plants began during time spent in northern Quebec planting tree seedlings, and was further satisfied while working with Artistic Landscape Designs Ltd. Gardening and design is a organic and nostalgic practice her for—a chance to reconnect with her roots—and to give space and purpose to plant life.
-        </p>
+            Her appreciation and understanding of plants began during time spent in northern Quebec planting tree seedlings, and was further satisfied while working with Artistic Landscape Designs Ltd. Gardening and design is a organic and nostalgic practice her for—a chance to reconnect with her roots—and to give space and purpose to plant life.
+          </p>
+        </div>
       </div>
       <div class="employee">
         <img src="images/employee1.jpg" alt="" class="employee-image">
@@ -106,9 +135,9 @@
     </div>
     <div class="worked-with">
       <div class="worked-with-left">
-        <div class="large-text gold">
+        <h3class=" gold-text">
           People we have worked with
-        </div>
+        </h3>
         <div class="companies">
           <span>CLV Group</span>
           <span>CLV Group</span>
@@ -122,9 +151,9 @@
     </div>
     <div class="faq">
       <div class="faq-top">
-        <span class="large-text gold">
+        <h3 class="gold-text">
           Frequently Asked Questions
-        </span>
+        </h3>
       </div>
       <div class="faq-item">
         <div class="faq-item-left">
@@ -146,48 +175,47 @@
           -
         </div>
       </div>
+      <div class="faq-item">
+        <div class="faq-item-left">
+          What is the total investment for a design?
+        </div>
+        <div class="faq-item-right plus">
+          +
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item-left">
+          What is the total investment for a design?
+        </div>
+        <div class="faq-item-right plus">
+          +
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item-left">
+          What is the total investment for a design?
+        </div>
+        <div class="faq-item-right plus">
+          +
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item-left">
+          What is the total investment for a design?
+        </div>
+        <div class="faq-item-right plus">
+          +
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-item-left">
+          What is the total investment for a design?
+        </div>
+        <div class="faq-item-right plus">
+          +
+        </div>
     </div>
-    <div class="faq-item">
-        <div class="faq-item-left">
-          What is the total investment for a design?
-        </div>
-        <div class="faq-item-right plus">
-          +
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-item-left">
-          What is the total investment for a design?
-        </div>
-        <div class="faq-item-right plus">
-          +
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-item-left">
-          What is the total investment for a design?
-        </div>
-        <div class="faq-item-right plus">
-          +
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-item-left">
-          What is the total investment for a design?
-        </div>
-        <div class="faq-item-right plus">
-          +
-        </div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-item-left">
-          What is the total investment for a design?
-        </div>
-        <div class="faq-item-right plus">
-          +
-        </div>
-      </div>
-  </body>
+  </div>
   <div class="footer no-gute">
       <div class="footer-left no-gute">
         <img src="images/logo.png" alt="">
