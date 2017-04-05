@@ -1,6 +1,15 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      function toggleModal(){
+        document.getElementById('modal').classList.toggle('open');
+        document.body.classList.toggle('fixed-body');
+      }
+      function toggleNav(){
+        document.getElementById('mobile-nav-items').classList.toggle('open');
+      }
+    </script>
   </head>
   <body class="clearfix">
     <div class="home-top">
@@ -10,47 +19,56 @@
           surrounding and spacial subtleties through a mindful and creative process.
         </p>
         <div class="names">
-          <span class="pink name">Engelina</span>
-          <span class="pink name">Mary-Anne</span>
-          <span class="pink name">Erin</span>
+          <h2 class="pink name">Engelina</h2>
+          <h2 class="pink name">Mary-Anne</h2>
+          <h2 class="pink name">Erin</h2>
         </div>
-        <img src="images/mouse.jpg" alt="" width="43px" height="55px">
-      </div>
+        <img src="images/mouse.jpg" class="mouse-scroll" alt="" width="43px" height="55px">
+    </div>
     <div class="nav">
       <div class="nav-left">
         <img src="images/logo.png" alt="" height="50" width="50">
       </div>
-      <div class="nav-right">
+      <div class="nav-right hide-mobile">
         <a href="" class="nav-item">Home</a>
         <a href="" class="nav-item">Journal</a>
         <a href="" class="nav-item">About us</a>
-        <a class="nav-item nav-contact">Contact US</a>
+        <a class="nav-item button">Contact US</a>
+      </div>
+      <a class="nav-right display-mobile" onclick="toggleNav()">
+        <img src="images/hamburger.svg" alt="" class="display-mobile hamburger">
+      </a>
+      <div id="mobile-nav-items" class="mobile-nav-items display-mobile">
+        <a href="" class="nav-item">Home</a>
+        <a href="" class="nav-item">Journal</a>
+        <a href="" class="nav-item">About us</a>
+        <a class="nav-item">Contact Us</a>
       </div>
     </div>
     <div class="main-photo cover-photo"></div>
     <div class="project-link cover-photo" style="background-image:url(images/beehaven.jpg)">
       <div class="link-hover">
-        <a href="" class="project-link-button"><span>Bee Haven</span></a>
+        <a href="" class="project-link-button"><h2>Bee Haven</h2></a>
       </div>
     </div>
     <div class="project-link cover-photo" style="background-image:url(images/beehaven.jpg)">
       <div class="link-hover">
-        <a href="" class="project-link-button"><span>Bee Haven</span></a>
+        <a href="" class="project-link-button"><h2>Bee Haven</h2></a>
       </div>
     </div>
     <div class="project-link cover-photo" style="background-image:url(images/beehaven.jpg)">
       <div class="link-hover">
-        <a href="" class="project-link-button"><span>Bee Haven</span></a>
+        <a href="" class="project-link-button"><h2>Bee Haven</h2></a>
       </div>
     </div>
     <div class="project-link cover-photo" style="background-image:url(images/beehaven.jpg)">
       <div class="link-hover">
-        <a href="" class="project-link-button"><span>Bee Haven</span></a>
+        <a href="" class="project-link-button"><h2>Bee Haven</h2></a>
       </div>
     </div>
     <div class="project-link cover-photo" style="background-image:url(images/beehaven.jpg)">
       <div class="link-hover">
-        <a href="" class="project-link-button"><span>Bee Haven</span></a>
+        <a href="" class="project-link-button"><h2>Bee Haven</h2></a>
       </div>
     </div>
     <div class="home-bottom">
@@ -61,19 +79,39 @@
           Follow up to any concerns. Extra effort to address concerns and explain the process.
            Personal touch. Great supervision of work being done. Ensure quality of work."
         </p>
-        <span class="">-Richard &amp; Pierrette Ransom</span>
+        <span class="pink-text">-Richard &amp; Pierrette Ransom</span>
       </div>
       <img src="images/right-arrow.svg" alt="">
-    </div>
-    <div class="carousel-items">
-      <img src="images/carousel-items.svg" alt="">
+      <div class="carousel-items">
+        <img src="images/carousel-items.svg" alt="">
+      </div>
     </div>
     <div class="social-links-section">
-      <img src="images/instagram.svg" alt="" width="45px" height="45px">
-      <img src="images/instagram.svg" alt="" width="45px" height="45px">
-      <img src="images/instagram.svg" alt="" width="45px" height="45px">
-      <img src="images/instagram.svg" alt="" width="45px" height="45px">
-      <img src="images/instagram.svg" alt="" width="45px" height="45px">
+      <div class="social-container">
+        <a href="">
+          <img src="images/instagram.svg" alt="" width="45px" height="45px">
+        </a>
+      </div>
+      <div class="social-container">
+        <a href="">
+          <img src="images/instagram.svg" alt="" width="45px" height="45px">
+        </a>
+      </div>
+      <div class="social-container">
+        <a href="">
+          <img src="images/instagram.svg" alt="" width="45px" height="45px">
+        </a>
+      </div>
+      <div class="social-container">
+        <a href="">
+          <img src="images/instagram.svg" alt="" width="45px" height="45px">
+        </a>
+      </div>
+      <div class="social-container">
+        <a href="">
+          <img src="images/instagram.svg" alt="" width="45px" height="45px">
+        </a>
+      </div>
     </div>
     <div class="footer">
       <div class="footer-left">

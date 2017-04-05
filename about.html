@@ -4,9 +4,10 @@
     <script>
       function toggleModal(){
         document.getElementById('modal').classList.toggle('open');
+        document.body.classList.toggle('fixed-body');
       }
       function toggleNav(){
-        document.getElementById('mobileNav').classList.toggle('open');
+        document.getElementById('mobile-nav-items').classList.toggle('open');
       }
     </script>
   </head>
@@ -16,9 +17,9 @@
         <a class="close-modal" onclick="toggleModal()">
           <img src="images/close.svg" alt="">
         </a>
-        <h1 class="pink-text">Contact us</h1>
-        <div class="text-center">Email: hello@gardeningbydesign.ca</div>
-        <div class="text-center">Phone number: 613-218-0468</div>
+        <h1 class="pink-text text-center">Contact us</h1>
+        <p class="text-center no-margin-bottom">Email: hello@gardeningbydesign.ca</p>
+        <p class="text-center">Phone number: 613-218-0468</p>
         <form action="submit" class="contact-us-form">
           <input type="text" placeholder="First Name" class="half-width">
           <input type="text" placeholder="Last Name" class="half-width">
@@ -61,7 +62,7 @@
           while also being environmentally conscious—striving to make areas look as though they’ve been there forever.
         </p>
       </div>
-      <div class="about-section-left about-section-text">
+      <div class="about-section-left about-section-text hide-mobile">
         <span class="gold large-text"></span>
         <p>The possibilities for landscape design are immeasurable. GBD knows this.
           At the core of their design initiative, is to create spaces using a fresh and innovative approach. 
@@ -69,8 +70,19 @@
           while also being environmentally conscious—striving to make areas look as though they’ve been there forever.
         </p>
       </div>
-      <div class="about-section-right about-section-image">
+      <div class="about-section-right about-section-image hide-mobile">
         
+      </div>
+      <div class="about-section-right about-section-image display-mobile">
+        
+      </div>
+      <div class="about-section-left about-section-text display-mobile">
+        <span class="gold large-text"></span>
+        <p>The possibilities for landscape design are immeasurable. GBD knows this.
+          At the core of their design initiative, is to create spaces using a fresh and innovative approach. 
+          They value infusing areas with a new energy 
+          while also being environmentally conscious—striving to make areas look as though they’ve been there forever.
+        </p>
       </div>
       <div class="about-section-left about-section-image">
 
@@ -87,22 +99,24 @@
     <div class="employee-section">
       <div class="employee">
         <img src="images/employee1.jpg" alt="" class="employee-image">
-        <h2 class="employee-name pink-text">Mary-Ann Schmitze</h2>
-        <h3 class="job-title">Founter & landscape designer</h3>
-        <p class="employee-description">
-          Founder of Gardening By Design, Mary-Anne’s aesthetic and design process is a product of her remarkable childhood.
+        <div class="employee-text --left">
+          <h2 class="employee-name pink-text">Mary-Ann Schmitze</h2>
+          <h3 class="job-title">Founter & landscape designer</h3>
+          <p class="employee-description">
+            Founder of Gardening By Design, Mary-Anne’s aesthetic and design process is a product of her remarkable childhood.
 
-          Growing up in the countryside, as one of 12 siblings, she’d always gravitated towards the outdoors. 
-          It was a chance to slip away from her house, which was often crowded and busy. 
-          She loved the natural beauty of rivers, rocks, and wild grasses—as well as the smell of dirt. 
-          This was also the time she felt most inventive allowing her imagination to run free.
+            Growing up in the countryside, as one of 12 siblings, she’d always gravitated towards the outdoors. 
+            It was a chance to slip away from her house, which was often crowded and busy. 
+            She loved the natural beauty of rivers, rocks, and wild grasses—as well as the smell of dirt. 
+            This was also the time she felt most inventive allowing her imagination to run free.
 
-          Her appreciation and understanding of plants began during time spent in northern Quebec planting tree seedlings, and was further satisfied while working with Artistic Landscape Designs Ltd. Gardening and design is a organic and nostalgic practice her for—a chance to reconnect with her roots—and to give space and purpose to plant life.
-        </p>
+            Her appreciation and understanding of plants began during time spent in northern Quebec planting tree seedlings, and was further satisfied while working with Artistic Landscape Designs Ltd. Gardening and design is a organic and nostalgic practice her for—a chance to reconnect with her roots—and to give space and purpose to plant life.
+          </p>
+        </div>
       </div>
       <div class="employee --start">
         <img src="images/employee1.jpg" alt="" class="employee-image">
-        <div class="employee-text">
+        <div class="employee-text --middle">
           <h2 class="employee-name pink-text">Mary-Ann Schmitze</h2>
           <h3 class="job-title">Founter & landscape designer</h3>
           <p class="employee-description">
@@ -119,25 +133,29 @@
       </div>
       <div class="employee">
         <img src="images/employee1.jpg" alt="" class="employee-image">
-        <h2 class="employee-name pink-text">Mary-Ann Schmitze</h2>
-        <h3 class="job-title">Founter & landscape designer</h3>
-        <p class="employee-description">
-          Founder of Gardening By Design, Mary-Anne’s aesthetic and design process is a product of her remarkable childhood.
+        <div class="employee-text --right">
+          <h2 class="employee-name pink-text">Mary-Ann Schmitze</h2>
+          <h3 class="job-title">Founter & landscape designer</h3>
+          <p class="employee-description">
+            Founder of Gardening By Design, Mary-Anne’s aesthetic and design process is a product of her remarkable childhood.
 
-          Growing up in the countryside, as one of 12 siblings, she’d always gravitated towards the outdoors. 
-          It was a chance to slip away from her house, which was often crowded and busy. 
-          She loved the natural beauty of rivers, rocks, and wild grasses—as well as the smell of dirt. 
-          This was also the time she felt most inventive allowing her imagination to run free.
+            Growing up in the countryside, as one of 12 siblings, she’d always gravitated towards the outdoors. 
+            It was a chance to slip away from her house, which was often crowded and busy. 
+            She loved the natural beauty of rivers, rocks, and wild grasses—as well as the smell of dirt. 
+            This was also the time she felt most inventive allowing her imagination to run free.
 
-          Her appreciation and understanding of plants began during time spent in northern Quebec planting tree seedlings, and was further satisfied while working with Artistic Landscape Designs Ltd. Gardening and design is a organic and nostalgic practice her for—a chance to reconnect with her roots—and to give space and purpose to plant life.
-        </p>
+            Her appreciation and understanding of plants began during time spent in northern Quebec planting tree seedlings, and was further satisfied while working with Artistic Landscape Designs Ltd. Gardening and design is a organic and nostalgic practice her for—a chance to reconnect with her roots—and to give space and purpose to plant life.
+          </p>
+        </div>
       </div>
     </div>
     <div class="worked-with">
       <div class="worked-with-left">
-        <h3class=" gold-text">
+        <h3 class="gold-text">
           People we have worked with
         </h3>
+      </div>
+      <div class="worked-with-right">
         <div class="companies">
           <span>CLV Group</span>
           <span>CLV Group</span>
@@ -159,7 +177,7 @@
         <div class="faq-item-left">
           What is the total investment for a design?
         </div>
-        <div class="faq-item-right plus">
+        <div class="faq-item-right plus pink-text">
           +
         </div>
       </div>
@@ -171,7 +189,7 @@
             Once we’ve connected we can set up a date to view your outdoor space and further assess your goals for the area.
           </div>
         </div>
-        <div class="faq-item-right plus">
+        <div class="faq-item-right minus pink-text">
           -
         </div>
       </div>
@@ -179,7 +197,7 @@
         <div class="faq-item-left">
           What is the total investment for a design?
         </div>
-        <div class="faq-item-right plus">
+        <div class="faq-item-right plus pink-text">
           +
         </div>
       </div>
@@ -187,7 +205,7 @@
         <div class="faq-item-left">
           What is the total investment for a design?
         </div>
-        <div class="faq-item-right plus">
+        <div class="faq-item-right plus pink-text">
           +
         </div>
       </div>
@@ -195,7 +213,7 @@
         <div class="faq-item-left">
           What is the total investment for a design?
         </div>
-        <div class="faq-item-right plus">
+        <div class="faq-item-right plus pink-text">
           +
         </div>
       </div>
@@ -203,7 +221,7 @@
         <div class="faq-item-left">
           What is the total investment for a design?
         </div>
-        <div class="faq-item-right plus">
+        <div class="faq-item-right plus pink-text">
           +
         </div>
       </div>
@@ -211,7 +229,7 @@
         <div class="faq-item-left">
           What is the total investment for a design?
         </div>
-        <div class="faq-item-right plus">
+        <div class="faq-item-right plus pink-text">
           +
         </div>
     </div>

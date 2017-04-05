@@ -1,42 +1,73 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      function toggleModal(){
+        document.getElementById('modal').classList.toggle('open');
+      }
+      function toggleNav(){
+        document.getElementById('mobile-nav-items').classList.toggle('open');
+      }
+    </script>
   </head>
-  <body>
-    <div class="nav">
-      <div class="nav-left">
-        <img src="images/logo.png" alt="" height="50" width="50">
-      </div>
-      <div class="nav-right">
-        <a href="" class="nav-item">Home</a>
-        <a href="" class="nav-item">Journal</a>
-        <a href="" class="nav-item">About us</a>
-        <a class="nav-item nav-contact">Contact US</a>
+  <body class="fixed-body">
+    <div class="contact-us" id="modal">
+      <div class="contact-us-inner">
+        <a class="close-modal" onclick="toggleModal()">
+          <img src="images/close.svg" alt="">
+        </a>
+        <h1 class="pink-text text-center">Contact us</h1>
+        <p class="text-center no-margin-bottom">Email: hello@gardeningbydesign.ca</p>
+        <p class="text-center">Phone number: 613-218-0468</p>
+        <form action="submit" class="contact-us-form">
+          <input type="text" placeholder="First Name" class="half-width no-margin-left">
+          <input type="text" placeholder="Last Name" class="half-width no-margin-right">
+          <input type="email" placeholder="Email" class="full-width">
+          <input type="text" placeholder="Address" class="full-width">
+          <input type="text" placeholder="How You Found Us" class="full-width">
+          <textarea name="" id="" cols="30" rows="5" placeholder="Quick Message" class="full-width"></textarea>
+          <button type="submit" class="button --submit">Submit</button>
+        </form>
       </div>
     </div>
-    <div class="main-photo cover-photo">
-      <div class="carousel projects-carousel">
+    <div class="nav">
+      <div class="nav-left no-gute">
+        <img src="images/logo.png" alt="" height="50" width="50" class="no-gute">
+      </div>
+      <div class="nav-right no-gute">
+        <a href="" class="nav-item no-gute">Home</a>
+        <a href="" class="nav-item no-gute">Journal</a>
+        <a href="" class="nav-item no-gute">About us</a>
+        <a class="nav-item button no-gute" onclick="toggleModal()">Contact US</a>
+      </div>
+    </div>
+    <div class="main-photo cover-photo --project">
+      <div class="carousel project-carousel">
         <div class="left">
-
+          <img src="images/left-arrow" alt="">
         </div>
         <div class="right">
-
+          <img src="images/right-arrow" alt="">
         </div>
       </div>
-      <div class="project-footer">
-        <div class="help">
-
-        </div>
-        <div class="project">
-
-        </div>
-        <div class="page">
-
-        </div>
-        <div class="contact">
-          
-        </div>
-      </div>
+      
     </div>
+    <div class="project-footer">
+        <div class="project-footer-left">
+          <a class="home-button">
+
+          </a>
+          <div class="project button --white">
+            Bee Haven
+          </div>
+          <div class="page button --white">
+            1 of 10
+          </div>
+        </div>
+        
+        <a class="contact button --white" onclick="toggleModal()">
+          Contact Us
+        </a>
+      </div>
   </body>
 </html>
