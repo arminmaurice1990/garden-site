@@ -613,6 +613,9 @@ a {
 .no-margin-right {
   margin-right: 0px; }
 
+.no-margin {
+  margin: 0px; }
+
 .text-center {
   text-align: center; }
 
@@ -730,7 +733,7 @@ body {
 .footer-left {
   display: flex;
   align-items: center;
-  width: 266px;
+  width: 276px;
   justify-content: space-between; }
 
 .footer-center {
@@ -861,10 +864,18 @@ body {
   width: 50%;
   height: 600px; }
 
+.about-section-image {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
 .about-section-text {
   background: #F9F7F3;
   padding: 0 60px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center; }
 
 .about-section {
@@ -921,7 +932,7 @@ body {
   margin-right: 60px; }
 
 .contact-us {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;

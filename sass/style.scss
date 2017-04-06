@@ -50,6 +50,9 @@ a {
 .no-margin-right {
   margin-right: 0px;
 }
+.no-margin {
+  margin: 0px;
+}
 .text-center {
   text-align: center;
 }
@@ -186,7 +189,7 @@ img {
 .footer-left {
   display: flex;
   align-items: center;
-  width: 266px;
+  width: 276px;
   justify-content: space-between;
 }
 
@@ -353,10 +356,18 @@ img {
   height: 600px;
   @extend .no-gute;
 }
+.about-section-image {
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 .about-section-text {
   background: $bg-color-two;
   padding: 0 60px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 .about-section{
@@ -445,7 +456,7 @@ img {
 }
 
 .contact-us{
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
