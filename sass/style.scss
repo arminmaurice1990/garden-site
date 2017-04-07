@@ -417,6 +417,7 @@ img {
   height: 216px;
   justify-content: space-between;
   padding-top: 65px;
+  flex-wrap: wrap;
   > * {
     @extend .no-gute;
   }
@@ -445,14 +446,8 @@ img {
   }
 }
 
-
 .employee-image{
   width: 100%;
-  height: 313px;
-}
-
-.employee-description{
-  margin-right: 60px;
 }
 
 .contact-us{
@@ -565,6 +560,13 @@ input, textarea {
 .employee {
   @extend .no-gute;
   width: 33%;
+}
+
+.companies {
+  span {
+    margin-right: 45px;
+    line-height: 40px;
+  }
 }
 
 .pagination {
